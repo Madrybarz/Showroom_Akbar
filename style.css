@@ -1,0 +1,80 @@
+/* Akbar Motor - style.css | semua class/id berawalan akbar_ */
+:root{--akbar_ungu:#3b1a6b;--akbar_ungu_tua:#24103f;--akbar_ungu_muda:#7c4dcc;--akbar_char:#2b2b33;--akbar_char_tua:#1d1d23;--akbar_emas:#f5b942;--akbar_teks:#ece8f5;--akbar_redup:#b4abc8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Roboto,Arial,sans-serif;background:var(--akbar_char_tua);color:var(--akbar_teks);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.akbar_container{width:min(1120px,92%);margin:auto}
+#akbar_header{position:sticky;top:0;z-index:50;background:rgba(36,16,63,.96);backdrop-filter:blur(8px);border-bottom:2px solid var(--akbar_emas)}
+.akbar_nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.akbar_logo{font-size:1.5rem;font-weight:800;letter-spacing:.5px}
+.akbar_logo span{color:var(--akbar_emas)}
+.akbar_menu{display:flex;gap:.3rem}
+.akbar_menu a{padding:.45rem .8rem;border-radius:8px;font-size:.95rem;transition:.25s}
+.akbar_menu a:hover,.akbar_menu a.akbar_aktif{background:var(--akbar_ungu_muda);color:#fff}
+.akbar_burger{display:none;background:none;border:1px solid var(--akbar_redup);color:#fff;font-size:1.4rem;padding:.1rem .6rem;border-radius:8px;cursor:pointer}
+#akbar_hero{background:linear-gradient(135deg,var(--akbar_ungu_tua),var(--akbar_ungu) 55%,var(--akbar_char));padding:5rem 0 4rem;text-align:center}
+#akbar_hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.2;margin-bottom:1rem}
+#akbar_hero h1 em{color:var(--akbar_emas);font-style:normal}
+#akbar_hero p{max-width:620px;margin:0 auto 1.8rem;color:var(--akbar_redup)}
+.akbar_hero_kecil{padding:3rem 0 2.2rem!important}
+.akbar_btn{display:inline-block;background:var(--akbar_emas);color:#241037;font-weight:700;padding:.75rem 1.6rem;border:0;border-radius:30px;cursor:pointer;font-size:1rem;margin:.3rem;transition:.25s}
+.akbar_btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(245,185,66,.35)}
+.akbar_btn_garis{background:transparent;color:#fff;border:2px solid var(--akbar_ungu_muda)}
+.akbar_section{padding:3.5rem 0}
+.akbar_gelap{background:var(--akbar_char)}
+.akbar_judul{text-align:center;font-size:1.8rem;margin-bottom:.4rem}
+.akbar_sub{text-align:center;color:var(--akbar_redup);margin-bottom:2rem}
+.akbar_grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.3rem}
+.akbar_card{background:var(--akbar_char);border:1px solid #3d3d4a;border-radius:16px;padding:1.4rem;transition:.3s}
+.akbar_gelap .akbar_card{background:var(--akbar_ungu_tua)}
+.akbar_card:hover{transform:translateY(-6px);border-color:var(--akbar_ungu_muda)}
+.akbar_card h3{margin-bottom:.4rem}
+.akbar_card p{color:var(--akbar_redup);font-size:.95rem}
+.akbar_motor_img{height:130px;border-radius:12px;background:linear-gradient(135deg,var(--akbar_ungu),var(--akbar_char));display:grid;place-items:center;font-size:4rem;margin-bottom:1rem}
+.akbar_harga{color:var(--akbar_emas);font-weight:800;font-size:1.2rem;margin:.4rem 0}
+.akbar_tag{display:inline-block;background:var(--akbar_ungu);padding:.1rem .6rem;border-radius:20px;font-size:.78rem;margin:.15rem .15rem 0 0}
+.akbar_stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;text-align:center}
+.akbar_stats b{display:block;font-size:2.4rem;color:var(--akbar_emas)}
+.akbar_filter{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.8rem}
+.akbar_filter input,.akbar_filter select,.akbar_form input,.akbar_form select,.akbar_form textarea{width:100%;padding:.75rem 1rem;border-radius:10px;border:1px solid #4a4a5a;background:var(--akbar_char_tua);color:var(--akbar_teks);font:inherit}
+.akbar_filter input{flex:2 1 220px;width:auto}
+.akbar_filter select{flex:1 1 150px;width:auto}
+.akbar_form{display:grid;gap:1rem}
+.akbar_form label{font-size:.9rem;color:var(--akbar_redup);display:block;margin-bottom:.25rem}
+.akbar_form input:focus,.akbar_form select:focus,.akbar_form textarea:focus,.akbar_filter input:focus{outline:2px solid var(--akbar_ungu_muda)}
+.akbar_dua{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.akbar_split{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:start}
+.akbar_pesan{padding:.8rem 1rem;border-radius:10px;margin-top:.5rem;display:none}
+.akbar_ok{display:block;background:#1f4d36;color:#bdf5d6}
+.akbar_err{display:block;background:#5a1f2b;color:#ffc6cf}
+.akbar_hasil{font-size:2rem;color:var(--akbar_emas);font-weight:800}
+.akbar_wa_btn{display:inline-flex;align-items:center;gap:.7rem;background:#25d366;color:#fff;font-weight:700;padding:.8rem 1.4rem;border-radius:40px;margin-top:1rem}
+.akbar_wa_btn svg{width:28px;height:28px;fill:#fff}
+#akbar_wa_float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.45);z-index:60;animation:akbar_denyut 2s infinite}
+#akbar_wa_float svg{width:34px;height:34px;fill:#fff}
+@keyframes akbar_denyut{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.akbar_kontak_item{display:flex;gap:.8rem;margin-bottom:1rem}
+.akbar_kontak_item span{font-size:1.5rem}
+.akbar_timeline{border-left:3px solid var(--akbar_ungu_muda);padding-left:1.2rem}
+.akbar_timeline div{margin-bottom:1.2rem}
+.akbar_timeline b{color:var(--akbar_emas)}
+details.akbar_faq{background:var(--akbar_char);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.8rem}
+details.akbar_faq summary{cursor:pointer;font-weight:600}
+details.akbar_faq p{margin-top:.6rem;color:var(--akbar_redup)}
+#akbar_footer{background:var(--akbar_ungu_tua);border-top:2px solid var(--akbar_emas);padding:2rem 0 1rem;margin-top:2rem}
+.akbar_footer_grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.akbar_footer_grid a{display:block;color:var(--akbar_redup)}
+.akbar_footer_grid a:hover{color:var(--akbar_emas)}
+.akbar_copy{text-align:center;color:var(--akbar_redup);font-size:.85rem;margin-top:1.5rem}
+.akbar_muncul{opacity:0;transform:translateY(24px);transition:.7s}
+.akbar_muncul.akbar_tampil{opacity:1;transform:none}
+@media(max-width:780px){
+.akbar_burger{display:block}
+.akbar_menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--akbar_ungu_tua);padding:.8rem 4%}
+.akbar_menu.akbar_buka{display:flex}
+.akbar_split,.akbar_dua{grid-template-columns:1fr}
+}
+
+.akbar_motor_img{height:180px;overflow:hidden}
+.akbar_motor_img img{width:100%;height:100%;object-fit:cover}

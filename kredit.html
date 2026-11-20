@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Kredit | Akbar Motor Showroom</title>
+    <meta name="description"
+        content="Akbar Motor - showroom jual beli motor bekas berkualitas, surat lengkap, harga transparan.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="akbar_header">
+        <div class="akbar_container akbar_nav"><a class="akbar_logo" href="index.html">Akbar<span>Motor</span></a>
+            <button id="akbar_burger" class="akbar_burger" aria-label="Menu">&#9776;</button>
+            <nav id="akbar_menu" class="akbar_menu"><a href="index.html">Beranda</a><a href="katalog.html">Katalog</a><a
+                    href="kredit.html">Simulasi Kredit</a><a href="jual-motor.html">Jual Motor</a><a
+                    href="tentang.html">Tentang</a><a href="testimoni.html">Testimoni</a><a
+                    href="kontak.html">Kontak</a></nav>
+        </div>
+    </header>
+    <section id="akbar_hero" class="akbar_hero_kecil">
+        <div class="akbar_container">
+            <h1>Simulasi Kredit Motor</h1>
+            <p>Hitung estimasi cicilan bulanan Anda (bunga flat).</p>
+        </div>
+    </section>
+    <section class="akbar_section">
+        <div class="akbar_container akbar_split">
+            <form id="akbar_form_kredit" class="akbar_form akbar_card">
+                <div><label for="akbar_k_harga">Harga Motor (Rp)</label><input id="akbar_k_harga" type="number"
+                        value="15500000" required></div>
+                <div class="akbar_dua">
+                    <div><label for="akbar_k_dp">DP (%)</label><select id="akbar_k_dp">
+                            <option>10</option>
+                            <option selected>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                        </select></div>
+                    <div><label for="akbar_k_tenor">Tenor</label><select id="akbar_k_tenor">
+                            <option value="12">12 bulan</option>
+                            <option value="24" selected>24 bulan</option>
+                            <option value="36">36 bulan</option>
+                        </select></div>
+                </div>
+                <div><label for="akbar_k_bunga">Bunga per Tahun (%)</label><input id="akbar_k_bunga" type="number"
+                        value="12" step="0.5"></div>
+                <button class="akbar_btn" type="submit">Hitung Cicilan</button>
+            </form>
+            <div class="akbar_card">
+                <h3>Hasil Simulasi</h3>
+                <p id="akbar_k_hasil">Isi form lalu tekan "Hitung Cicilan".</p>
+                <hr style="border-color:#444;margin:1rem 0">
+                <p>Syarat: KTP, KK, slip gaji / bukti usaha. Hasil hanya estimasi, final ditentukan saat survei.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="akbar_footer">
+        <div class="akbar_container">
+            <div class="akbar_footer_grid">
+                <div>
+                    <h3 class="akbar_logo">Akbar<span>Motor</span></h3>
+                    <p class="akbar_copy" style="text-align:left">Showroom jual beli motor bekas terpercaya.</p>
+                </div>
+                <div><b>Menu</b><a href="index.html">Beranda</a><a href="katalog.html">Katalog</a><a
+                        href="kredit.html">Simulasi Kredit</a><a href="jual-motor.html">Jual Motor</a><a
+                        href="tentang.html">Tentang</a><a href="testimoni.html">Testimoni</a><a
+                        href="kontak.html">Kontak</a></div>
+                <div><b>Kontak</b><a href="kontak.html">Jl. Otista Dusun Panyinkiran Desa Panyingkiran RT/RW 01/02(Seberang Pabrik heler), Kota Ciamis</a><a
+                        href="kontak.html">0821-1816-7775</a><a href="kontak.html">acepndut9@gmail.com</a></div>
+            </div>
+            <p class="akbar_copy">&copy; 2026 Akbar Motor Showroom </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
